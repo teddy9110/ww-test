@@ -14,7 +14,7 @@
     "dev": "parallelshell \"yarn watch\" \"yarn watch:build\"",
     "lint": "eslint src",
     "test": "nodemon -q -x 'yarn test:unit --silent'",
-    "test:unit": "tape 'src/**/*.spec.js' | tap-spec",
+    "test:unit": "tape src/**/*.spec.js | tap-spec",
     "test:feature": "cucumber-js test/features",
     "ci": "yarn && yarn lint && yarn test:unit && yarn test:feature"
   },
