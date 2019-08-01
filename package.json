@@ -4,7 +4,7 @@
   "description": "A practical code test for prospective software engineers",
   "main": "src/index.js",
   "engines": {
-    "node": "10.16.0"
+    "node": "^10.16.0"
   },
   "scripts": {
     "start": "node src/index.js",
