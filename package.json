@@ -14,7 +14,7 @@
     "dev": "parallelshell \"yarn watch\" \"yarn watch:build\"",
     "lint": "eslint src",
     "test": "nodemon -q -x 'yarn test:unit --silent'",
-    "test:unit": "tape src/**/*.spec.js | tap-spec",
+    "test:unit": "tape src/**/*.spec.js | tap-difflet",
     "test:feature": "cucumber-js test/features",
     "ci": "yarn && yarn lint && yarn test:unit && yarn test:feature"
   },
@@ -80,6 +80,7 @@
     "proxyquire": "2.1.0",
     "rimraf": "2.6.3",
     "supertest": "3.3.0",
+    "tap-difflet": "0.7.2",
     "tap-spec": "5.0.0",
     "tape": "4.9.1",
     "timekeeper": "2.1.2",
